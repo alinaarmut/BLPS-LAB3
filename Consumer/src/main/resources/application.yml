@@ -1,0 +1,37 @@
+server:
+  port: 8173
+
+spring:
+  activemq:
+    broker-url: tcp://localhost:61616
+    username: admin
+    password: admin
+    packages:
+      trust-all: true
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/studs
+    username: s367826
+    password: 4Xb2gijcYKqkn0xt
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+
+
+logging:
+  level:
+    root: info
+    org.hibernate.SQL: off
+    org.hibernate.type.descriptor.sql.BasicBinder: off
+    org.springframework.security.web: DEBUG
+
+
+yookassa:
+  shopId: 1107575
+  shopKey: test_1MkcIonqR8EHRfdzfRfFAcEdohT1LFUQlrDzwtWg_FI
+
